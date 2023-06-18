@@ -1,0 +1,169 @@
+@font-face {
+	font-family: "Expo Arabic Book";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/ExpoArabicLight.ttf") format("truetype");
+  }
+   
+   @font-face {
+	font-family: "Expo Arabic Book";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/ExpoArabicBook.ttf") format("truetype");
+  }
+   @font-face {
+	font-family: "Expo Arabic Book";
+	font-style: normal;
+	font-weight: 500;
+	src: url("../fonts/ExpoArabicMedium.ttf") format("truetype");
+  }
+  @font-face {
+	font-family: "Expo Arabic Book";
+	font-style: normal;
+	font-weight: 600;
+	src: url("../fonts/ExpoArabicSemiBold.ttf") format("truetype");
+  }
+  @font-face {
+	font-family: "Expo Arabic Book";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/ExpoArabicBold.ttf") format("truetype");
+  }
+  * {
+	font-family: "Expo Arabic Book", sans-serif;
+  }
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f2f2f2;
+}
+a {
+	text-decoration: none !important;
+}
+/* **************** */
+/* ***** Navbar *****/
+/* **************** */
+.navbar a {
+	color: #00f900 !important;
+}
+
+.navbar .log-in button {
+	border: 1px solid #00f900;
+	color: #00f900;
+}
+
+
+
+/* add appropriate colors to fb, twitter and google buttons */
+.auth-box .fb, .auth-box .twitter, .auth-box .google{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+color: white;
+}
+
+.auth-box .fb {
+  background-color: #3B5998;
+}
+.auth-box .fb:hover{
+	background-color: #5685e9;
+}
+.auth-box .twitter {
+  background-color: #55ACEE;
+}
+.auth-box .twitter:hover {
+  background-color: #2870a7;
+}
+
+.auth-box .google {
+  background-color: #dd4b39;
+}
+.auth-box .google:hover {
+  background-color: #9d544b;
+}
+.auth-box .social_media {
+	display: flex;
+    justify-content: center;
+    gap: 15px;
+	margin-bottom: 20px;
+}
+.auth-box .by{
+	text-align: center;
+}
+/* style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/************************************    Home    ************************************/
+.home-header .wrapper .carousel-inner .carousel-item{
+    float: inherit;
+    width: 550px;
+	margin: 0 auto;
+}
+.home-header .wrapper .carousel-inner .carousel-item img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/************************************   End Home    ********************************/
+
+/* footer */
+footer {
+	background-color: #000000;
+	color: #01fa01;
+	margin-top: 80px;
+	border-radius: 70px 0 0 0;
+}
+
+footer .logo img {
+	width: 200px;
+	margin-top: -30px;
+}
+footer a {
+	color: #01fa01;
+}
+
+footer p:first-of-type {
+	margin-top: -40px;
+}
+footer .icon img {
+	width: 25px;
+}
+
+/******************************** Responsive breakpoints ************************************/
+/*** Large devices (desktops, less than 1200px) ***/
+@media (max-width: 1199.98px) {
+}
+
+/*** Medium devices (tablets, less than 992px) ***/
+@media (max-width: 991.98px) {
+
+}
+/*** small devices (tablets, less than 992px) ***/
+@media (max-width: 767.98px) {
+.home-header .wrapper .carousel-inner .carousel-item {
+		width: 360px;}
+		
+}
+
+/*** Extra small devices (portrait phones, less than 576px) ***/
+@media (max-width: 575.98px) {
+}

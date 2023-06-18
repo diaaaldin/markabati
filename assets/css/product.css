@@ -1,0 +1,74 @@
+button.ride {
+	background-color: #01f901;
+}
+button.pay {
+	background-color: #bcbcbc;
+}
+
+.banner .box {
+	background-color: #e8e8e8;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	/* padding: 50px 100px; */
+}
+
+.banner .box .carousel-inner img {
+	width: 70% !important;
+	margin: auto;
+}
+
+.carousel-control-next span,
+.carousel-control-prev span {
+	/* width: 0; */
+	background-color: #bcbcbc;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+.banner .control img {
+	width: 20px;
+	height: 20px;
+}
+
+.carousel-control-next span {
+	transform: rotate(180deg);
+}
+header .carousel-indicators {
+	bottom: -45px;
+}
+.carousel-indicators [data-bs-target] {
+	height: 40px;
+	width: 40px;
+	background-color: transparent;
+	/* bottom: -10px; */
+}
+header .full-specs .box {
+	border-radius: 20px;
+}
+header .full-specs .icon img {
+	background-color: #01f901;
+	width: 40px;
+}
+
+header .description {
+	background-color: white;
+	color: #6b6b6b;
+	border-radius: 20px;
+}
+
+.align-right {
+	text-align: right;
+}
+.confirmBtn {
+	width: 270px;
+	background-color: #24ff00;
+}
+
+.heart-icon {
+	cursor: pointer;
+}
+.heart-icon svg {
+	display: none;
+}
+.heart-icon svg.active {
+	display: inline;
+}

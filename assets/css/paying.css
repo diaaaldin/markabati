@@ -1,0 +1,176 @@
+header {
+	margin-top: 90px;
+}
+.progress-bar {
+	max-width: 600px;
+	height: 6px;
+	background-color: #707070;
+	margin-bottom: 60px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.progress-bar .bar {
+	width: 50%;
+	height: 6px;
+	position: relative;
+}
+.progress-bar .bar > * {
+	position: absolute;
+}
+
+.progress-bar .bar span.dot {
+	height: 16px;
+	width: 16px;
+	background-color: #707070;
+	right: 0;
+	top: -5px;
+	border-radius: 50%;
+}
+.progress-bar .bar .inner-bar {
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0;
+}
+.progress-bar .bar:first-child span.dot {
+	background-color: #24ff00;
+}
+.progress-bar .bar span.text {
+	color: #000;
+	top: 15px;
+	right: -50px;
+}
+.progress-bar .bar:last-child span.text {
+	right: -10px;
+}
+/* .progress-bar .bar:first-child {
+	background-color: yellow;
+} */
+
+.progress-bar .bar:last-child {
+	background-color: transparent;
+	width: 0px;
+}
+
+/* progressing */
+.progress-bar .bar:first-child::before {
+	background-color: #24ff00;
+}
+/* form  */
+[type="radio"] {
+	display: none !important;
+}
+
+header .form-check label {
+	width: 100%;
+	padding-right: 18px;
+	border-radius: 10px;
+	box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ececec;
+	border: 1px solid #bebebe;
+	cursor: pointer;
+}
+/* header .form-check label h5:first-child {
+	font-size: larger;
+} */
+header .form-check label h5:last-child {
+	color: #868686;
+}
+
+[type="radio"]:checked + label {
+	border-color: #24ff00;
+}
+.form-steps {
+	display: none;
+}
+.form-steps.active {
+	display: block;
+}
+
+.nice-select ul.list {
+	width: 100%;
+	border-radius: 10px 10px 30px 30px;
+	transform: translate(0, -3px) !important;
+}
+
+.nice-select {
+	line-height: 20px;
+	padding-right: 18px;
+	height: 38px;
+}
+.nice-select span {
+	margin-left: 100%;
+}
+.nice-select:after {
+	left: 12px;
+	right: auto;
+}
+
+/* section 3 */
+.form-steps.step-3 input {
+	max-width: 100% !important;
+	width: 100%;
+}
+
+.next-btn {
+	background-color: #24ff00;
+	border: 2px solid #24ff00;
+}
+/* some animation */
+.back-btn,
+.next-btn {
+	transition: 0.3;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.back-btn:hover {
+	background-color: black;
+	color: white;
+}
+.next-btn:hover {
+	background-color: transparent;
+	color: #329d08;
+	border-color: #329d08;
+}
+.confirmBtn {
+	width: 270px;
+	background-color: #24ff00;
+}
+/* car specification */
+.cars .box {
+	border-radius: 20px;
+	box-shadow: -2px 2px 13px rgba(0, 0, 0, 0.1);
+	background-color: #eeeeee;
+}
+.cars .image-box {
+	background-color: #d4d4d4;
+	border-radius: 20px;
+	box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+	/* padding: ; */
+}
+.cars .box .left small {
+	font-size: 10px;
+	color: #9f9f9f;
+}
+.left .lines img {
+	width: 12px;
+}
+.left .distance span {
+	font-size: 10px;
+}
+.swal2-select {
+	display: none;
+}
+.align-right {
+	text-align: right;
+}
+@media (max-width: 576px) {
+	.progress-bar .bar span.text {
+		font-size: 14px;
+	}
+}
+@media (max-width: 767px) {
+	.how-to-pay {
+		flex-direction: column-reverse;
+		gap: 20px;
+	}
+}

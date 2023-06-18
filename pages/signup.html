@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./../assets/css/auth.css" />
+		<link rel="stylesheet" href="./../assets/css/style.css" />
+		<link href="./../assets/css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="./../assets/css/all.min.css" rel="stylesheet" type="text/css" />
+
+		<title>مركبتي</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container-fluid">
+				<!-- User -->
+				<div class="right">
+					<a href="./store.html" class="text-decoration-none">
+						<img
+							src="./../assets/images/user.svg"
+							alt="مستخدم"
+							class="d-inline-block ms-2"
+						/>
+						<span class="">متجرنا</span>
+					</a>
+				</div>
+				<!-- Logo -->
+				<div class="logo">
+					<a href="./home.html"
+						><img src="./../assets/images/مركبتي logo.png" alt="مركبتي"
+					/></a>
+				</div>
+				<!-- Log in Nav -->
+				<div>
+					<a href="./../index.html" class="text-decoration-none">
+						<span class="d-inline-block ms-2">تسجيل الدخول</span>
+					</a>
+					<a href="./signup.html" class="log-in text-decoration-none">
+						<button class="bg-transparent rounded-pill px-3">تسجيل</button>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Sign in box -->
+		<div class="auth-box mx-auto auth-box pt-3 pb-4">
+			<!-- Sign in title -->
+			<div class="title text-center mb-4">
+				<h2>انشاء حساب</h2>
+			</div>
+			<!-- Sign in Form -->
+			<form action="" class="mx-5">
+				<!-- first name input -->
+				<div class="mb-3">
+					<input
+						required
+						type="text"
+						name="fname"
+						class="form-control rounded-pill"
+						id="fname"
+						aria-describedby="fname"
+						placeholder="الاسم الاول"
+					/>
+				</div>
+				<!-- last name input -->
+				<div class="mb-3">
+					<input
+						required
+						type="text"
+						name="lname"
+						class="form-control rounded-pill"
+						id="lname"
+						aria-describedby="lname"
+						placeholder="الاسم العائلة"
+					/>
+				</div>
+				<!-- email input -->
+				<div class="mb-3">
+					<input
+						required
+						type="email"
+						name="email"
+						class="form-control rounded-pill"
+						id="email"
+						aria-describedby="email"
+						placeholder="البريد الالكتروني"
+					/>
+				</div>
+				<!-- password -->
+				<div class="mb-3">
+					<input
+						required
+						type="password"
+						name="password"
+						class="form-control rounded-pill"
+						id="password"
+						aria-describedby="password"
+						placeholder="كلمة المرور"
+					/>
+				</div>
+				<!-- mobile number -->
+				<div class="mb-3">
+					<input
+						required
+						type="text"
+						name="mobile"
+						class="form-control rounded-pill"
+						id="mobile"
+						aria-describedby="mobile"
+						placeholder="رقم
+ الجوال"
+					/>
+				</div>
+		
+
+		
+				<!-- submit -->
+				<div class="mb-2">
+					<button
+						required
+						type="submit"
+						name="submit"
+						class="form-control rounded-pill btn fw-bold"
+					>
+						انشاء حساب
+					</button>
+				</div>
+
+				<div class="mb-4">
+					<a
+						href="./storeSignup.html"
+						style="background-color: #d9d9d9"
+						class="form-control rounded-pill btn fw-bold py-3"
+					>
+						طلب انشاء حساب معرض
+					</a>
+				</div>
+				<p class="by">التسجيل بواسطة</p>
+				<div class="social_media">
+						<a href="#" class="fb btn">
+							<i class="fab fa-facebook-f"></i><i class="lab la-instagram"></i>
+						
+						</a>
+						<a href="#" class="twitter btn"><i class="fab fa-twitter"></i>
+						  	 
+						</a>
+						<a href="#" class="google btn"><i class="fab fa-google"></i>
+						   
+						</a>
+				</div>
+
+				<div class="d-flex justify-content-between">
+					<small class="policies"
+						>من خلال المتابعة فأنت توافق على
+						<span><a href="">الشروط و الأحكام</a></span>
+						<span><a href="">و سياسة الخصوصية </a></span>
+					</small>
+				</div>
+			</form>
+		</div>
+		<script src="./../assets/js/bootstrap.min.js"></script>
+		<script src="./../assets/js/main.js"></script>
+	</body>
+</html>

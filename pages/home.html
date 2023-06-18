@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./../assets/css/style.css" />
+		<link rel="stylesheet" href="./../assets/css/home.css" />
+		<link rel="stylesheet" href="./../assets/css/select2.min.css" />
+		<link
+			rel="stylesheet"
+			href="./../assets/css/select2-bootstrap-5-theme.rtl.min.css"
+		/>
+
+		<title>مركبتي</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<!-- Navbar -->
+		
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<div class="container">
+					<!-- User -->
+					<div class="right">
+						<a href="./store.html" class="text-decoration-none">
+							<img
+								src="./../assets/images/user.svg"
+								alt="مستخدم"
+								class="d-inline-block ms-2"
+							/>
+							<span class="">متجرنا</span>
+						</a>
+					</div>
+					<!-- Logo -->
+					<div class="logo">
+						<a href="./home.html"
+							><img src="./../assets/images/مركبتي logo.png" alt="مركبتي"
+						/></a>
+					</div>
+					<!-- Log in Nav -->
+					<div>
+						<a href="./../index.html" class="text-decoration-none">
+							<span class="d-inline-block ms-2">تسجيل الدخول</span>
+						</a>
+						<a href="./signup.html" class="log-in text-decoration-none">
+							<button class="bg-transparent rounded-pill px-3">تسجيل</button>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+
+		<!-- header -->
+		<header class="home-header">
+			<div class="container-fluid py-4">
+				<img src="./../assets/images/tree-up.png" alt="" class="tree-up" />
+				<div class="wrapper">
+					<div id="carouselExampleIndicators"
+						class="carousel slide mx-auto w-100 h-100"
+						data-bs-ride="carousel">
+
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+						<div class="carousel-inner h-100">
+							<div class="carousel-item active h-100">
+								<div class="img">
+									<img
+									src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+									class="d-block"
+									alt="..."
+								/>
+								</div>
+								
+							</div>
+							<div class="carousel-item h-100">
+								<img
+									src="./../assets/images/tesla.jpg"
+									class="d-block"
+									alt="..."
+								/>
+							</div>
+							<div class="carousel-item h-100">
+								<img
+									src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+									class="d-block"
+									alt="..."
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="./../assets/images/tree-down.png" alt="" class="tree-down" />
+			</div>
+		</header>
+
+		<!-- filter and cars -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<!-- filter sidebar  -->
+					<div class="col-md-3 col-sm-12">
+						<div class="sidebar pb-3">
+							<div
+								class="head px-2 py-1 d-flex align-items-center justify-content-between"
+							>
+								<div class="title d-flex gap-1">
+									<h4>فلتر</h4>
+									<!-- <img src="./../assets/images/menu-icon.png" alt="" /> -->
+								</div>
+								<div class="re-assign">
+									<img src="./../assets/images/زبالة.svg" alt="" />
+									<small>اعادة تعيين</small>
+								</div>
+							</div>
+							<form action="" method="POST">
+								<ul class="list-unstyled px-2 py-1">
+									<!-- 1 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse1"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img src="./../assets/images/car-icon.svg" alt="" />
+												</div>
+												<span>النوع</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse1">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+											>
+												<!-- active class for this li element -->
+												<select
+													class="form-select field-select"
+													data-placeholder="قم باختيار النوع"
+													name="car-type"
+												>
+													<option></option>
+													<option>تويوتا</option>
+												</select>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 2 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse2"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img src="./../assets/images/car-icon.svg" alt="" />
+												</div>
+												<span>الموديل</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse2">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+											>
+												<select
+													class="form-select field-select"
+													data-placeholder="قم باختيار الموديل"
+													name="car-model"
+												>
+													<option></option>
+													<option>تويوتا</option>
+												</select>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 3 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse3"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img src="./../assets/images/year.svg" alt="" />
+												</div>
+												<span>السنة</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse3">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav range-select list-unstyled fw-normal pb-1 small"
+											>
+												<li
+													class="py-2 d-flex justify-content-between align-content-center flex-wrap px-0 gap-1"
+												>
+													<input
+														type="text"
+														name="from"
+														class="range rounded-pill py-2"
+														placeholder="1920"
+														maxlength="4"
+													/>
+													<h6 class="mb-0">الى</h6>
+													<input
+														type="text"
+														name="from"
+														class="range rounded-pill py-2"
+														placeholder="2023"
+														maxlength="4"
+													/>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 4 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse4"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img src="./../assets/images/money.svg" alt="" />
+												</div>
+												<span>السعر</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse4">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav range-select list-unstyled fw-normal pb-1 small"
+											>
+												<li
+													class="py-2 d-flex flex-wrap justify-content-between align-content-center gap-1 px-0"
+												>
+													<input
+														type="text"
+														name="price-from"
+														class="range rounded-pill py-2"
+														placeholder="أدنى سعر"
+													/>
+													<h6 class="mb-0">الى</h6>
+													<input
+														type="text"
+														name="price-to"
+														class="range rounded-pill py-2"
+														placeholder="أقصى سعر"
+													/>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 5 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse5"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img src="./../assets/images/speed.svg" alt="" />
+												</div>
+												<span>عدد الأميال</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse5">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav range-select list-unstyled fw-normal pb-1 small"
+											>
+												<li
+													class="py-2 d-flex flex-wrap justify-content-between align-content-center gap-1 px-0"
+												>
+													<input
+														type="text"
+														name="price-from"
+														class="range rounded-pill py-2"
+														placeholder="0"
+														maxlength="4"
+													/>
+													<h6 class="mb-0">الى</h6>
+													<input
+														type="text"
+														name="price-to"
+														class="range rounded-pill py-2"
+														placeholder="999999 "
+														maxlength="8"
+													/>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 6 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse6"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img src="./../assets/images/colors.svg" alt="" />
+												</div>
+												<span> الألوان</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse6">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+											>
+												<!-- end ******************* -->
+												<!-- color 1 -->
+												<select
+													class="form-select field-select"
+													data-placeholder="قم باختيار اللون"
+													name="car-name"
+												>
+													<option></option>
+													<option
+														class="d-flex justify-content-between align-items-center"
+														value="أسود"
+													>
+														أسود
+													</option>
+												</select>
+
+												<!-- end ******************* -->
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 7 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse7"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img src="./../assets/images/car-icon.svg" alt="" />
+												</div>
+												<span>الهيكل</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse7">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+											>
+												<!-- active class for this li element -->
+												<li class="">
+													<select
+														class="form-select field-select"
+														data-placeholder="قم باختيار الهيكل"
+														name="struct"
+													>
+														<option></option>
+														<option value="كوبيه">كوبيه</option>
+													</select>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 8 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse8"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img
+														src="./../assets/images/specifications.svg"
+														alt=""
+													/>
+												</div>
+												<span>المواصفات</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse8">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+											>
+												<!-- active class for this li element -->
+												<select
+													class="form-select field-select"
+													data-placeholder="قم باختيار المواصفات"
+													name="specs"
+												>
+													<option></option>
+													<option value="أمريكي">أمريكي</option>
+												</select>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 9 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse9"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img src="./../assets/images/car-icon.svg" alt="" />
+												</div>
+												<span>حالة الصبغ</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse9">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+											>
+												<!-- active class for this li element -->
+												<select
+													class="form-select field-select"
+													data-placeholder="قم باختيار حالة الصبغ"
+													name="paint-state"
+												>
+													<option></option>
+													<option value="ممتاز">ممتاز</option>
+												</select>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 10 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse10"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img
+														src="./../assets/images/maintinance.svg"
+														alt=""
+													/>
+												</div>
+												<span>سجل الصيانة</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse maintinance" id="dashboard-collapse10">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+											>
+												<select
+													class="form-select field-select"
+													data-placeholder="قم باختيار مكان الصيانة"
+													name="maintinance"
+												>
+													<option></option>
+													<option value="البودي">البودي</option>
+												</select>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<!-- 11 -->
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse11"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img src="./../assets/images/settings.svg" alt="" />
+												</div>
+												<span> نوع الغيارات</span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse11">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+											>
+												<select
+													class="form-select field-select"
+													data-placeholder="قم باختيار نوع الغيارات"
+													name="refill-type"
+												>
+													<option></option>
+													<option value="أوتوماتيك">أوتوماتيك</option>
+												</select>
+											</ul>
+										</div>
+									</li>
+									<hr class="my-0" />
+									<li class="py-1">
+										<div
+											class="btn btn-toggle d-flex justify-content-between align-items-center w-100 shadow-none collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#dashboard-collapse12"
+											aria-expanded="false"
+										>
+											<div class="list-name d-flex gap-3">
+												<div class="icon">
+													<img
+														src="./../assets/images/gas-station.svg"
+														alt=""
+													/>
+												</div>
+												<span>نوع الوقود </span>
+											</div>
+											<div class="collapose-icon">
+												<img src="./../assets/images/expand.svg" alt="" />
+											</div>
+										</div>
+
+										<div class="collapse" id="dashboard-collapse12">
+											<hr class="my-0" />
+											<ul
+												class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+											>
+												<ul
+													class="btn-toggle-nav active-class list-unstyled fw-normal pb-1 small"
+												>
+													<!-- active class for this li element -->
+													<select
+														class="form-select field-select"
+														data-placeholder="قم باختيار نوع الوقود"
+														name="fuel"
+													>
+														<option></option>
+														<option value="غاز">غاز</option>
+													</select>
+												</ul>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<button
+									type="submit"
+									class="submit btn d-block rounded-pill shadow-lg fw-bold mx-auto"
+								>
+									فلترة
+								</button>
+							</form>
+						</div>
+					</div>
+					<!-- cars -->
+					<div class="col-md-9 col-sm-12">
+						<!-- filter buttons -->
+						<div class="filters mb-3">
+							<ul class="d-flex gap-3 list-unstyled">
+								<li><button class="">سيارات</button></li>
+								<li><button class="">دراجات نارية</button></li>
+								<li><button class="">سيارات مستخدمة</button></li>
+								<li><button class="">أخرى</button></li>
+							</ul>
+						</div>
+						<!-- cars section -->
+						<div class="cars">
+							<div class="row mb-5">
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="box pb-2">
+										<!-- car image -->
+										<a href="">
+											<div class="image-box px-3 py-3 mb-2">
+												<img
+													src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+													alt=""
+													class="w-100"
+												/></div
+										></a>
+										<!-- car description -->
+										<div class="car-desc px-3">
+											<div
+												class="d-flex justify-content-between align-items-end"
+											>
+												<div class="right">
+													<div></div>
+													<div class="price">20.000$</div>
+													<div class="add-to-favorite">
+														<span class="heart-icon">
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="#000"
+																class="bi bi-heart un-fill active"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																/>
+															</svg>
+															<svg
+																style="color: red"
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="currentColor"
+																class="bi bi-heart-fill filled"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	fill-rule="evenodd"
+																	d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+																	fill="red"
+																></path>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<div class="left">
+													<div
+														class="d-flex justify-content-between align-items-center"
+													>
+														<div class="distance">20<span>الف ك.م</span></div>
+														<div class="lines">
+															<img src="./../assets/images/lines.svg" alt="" />
+														</div>
+														<div class="date">2022</div>
+													</div>
+													<p class="car-name mb-0">Hyundai Elantra</p>
+													<small class="">معرض الملكي للسيارات</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="box pb-2">
+										<!-- car image -->
+										<a href="">
+											<div class="image-box px-3 py-3 mb-2">
+												<img
+													src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+													alt=""
+													class="w-100"
+												/></div
+										></a>
+										<!-- car description -->
+										<div class="car-desc px-3">
+											<div
+												class="d-flex justify-content-between align-items-end"
+											>
+												<div class="right">
+													<div></div>
+													<div class="price">20.000$</div>
+													<div class="add-to-favorite">
+														<span class="heart-icon">
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="#000"
+																class="bi bi-heart un-fill active"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																/>
+															</svg>
+															<svg
+																style="color: red"
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="currentColor"
+																class="bi bi-heart-fill filled"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	fill-rule="evenodd"
+																	d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+																	fill="red"
+																></path>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<div class="left">
+													<div
+														class="d-flex justify-content-between align-items-center"
+													>
+														<div class="distance">20<span>الف ك.م</span></div>
+														<div class="lines">
+															<img src="./../assets/images/lines.svg" alt="" />
+														</div>
+														<div class="date">2022</div>
+													</div>
+													<p class="car-name mb-0">Hyundai Elantra</p>
+													<small class="">معرض الملكي للسيارات</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="box pb-2">
+										<!-- car image -->
+										<a href="">
+											<div class="image-box px-3 py-3 mb-2">
+												<img
+													src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+													alt=""
+													class="w-100"
+												/></div
+										></a>
+										<!-- car description -->
+										<div class="car-desc px-3">
+											<div
+												class="d-flex justify-content-between align-items-end"
+											>
+												<div class="right">
+													<div></div>
+													<div class="price">20.000$</div>
+													<div class="add-to-favorite">
+														<span class="heart-icon">
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="#000"
+																class="bi bi-heart un-fill active"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																/>
+															</svg>
+															<svg
+																style="color: red"
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="currentColor"
+																class="bi bi-heart-fill filled"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	fill-rule="evenodd"
+																	d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+																	fill="red"
+																></path>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<div class="left">
+													<div
+														class="d-flex justify-content-between align-items-center"
+													>
+														<div class="distance">20<span>الف ك.م</span></div>
+														<div class="lines">
+															<img src="./../assets/images/lines.svg" alt="" />
+														</div>
+														<div class="date">2022</div>
+													</div>
+													<p class="car-name mb-0">Hyundai Elantra</p>
+													<small class="">معرض الملكي للسيارات</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="box pb-2">
+										<!-- car image -->
+										<a href="">
+											<div class="image-box px-3 py-3 mb-2">
+												<img
+													src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+													alt=""
+													class="w-100"
+												/></div
+										></a>
+										<!-- car description -->
+										<div class="car-desc px-3">
+											<div
+												class="d-flex justify-content-between align-items-end"
+											>
+												<div class="right">
+													<div></div>
+													<div class="price">20.000$</div>
+													<div class="add-to-favorite">
+														<span class="heart-icon">
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="#000"
+																class="bi bi-heart un-fill active"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																/>
+															</svg>
+															<svg
+																style="color: red"
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="currentColor"
+																class="bi bi-heart-fill filled"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	fill-rule="evenodd"
+																	d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+																	fill="red"
+																></path>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<div class="left">
+													<div
+														class="d-flex justify-content-between align-items-center"
+													>
+														<div class="distance">20<span>الف ك.م</span></div>
+														<div class="lines">
+															<img src="./../assets/images/lines.svg" alt="" />
+														</div>
+														<div class="date">2022</div>
+													</div>
+													<p class="car-name mb-0">Hyundai Elantra</p>
+													<small class="">معرض الملكي للسيارات</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="box pb-2">
+										<!-- car image -->
+										<a href="">
+											<div class="image-box px-3 py-3 mb-2">
+												<img
+													src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+													alt=""
+													class="w-100"
+												/></div
+										></a>
+										<!-- car description -->
+										<div class="car-desc px-3">
+											<div
+												class="d-flex justify-content-between align-items-end"
+											>
+												<div class="right">
+													<div></div>
+													<div class="price">20.000$</div>
+													<div class="add-to-favorite">
+														<span class="heart-icon">
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="#000"
+																class="bi bi-heart un-fill active"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																/>
+															</svg>
+															<svg
+																style="color: red"
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="currentColor"
+																class="bi bi-heart-fill filled"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	fill-rule="evenodd"
+																	d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+																	fill="red"
+																></path>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<div class="left">
+													<div
+														class="d-flex justify-content-between align-items-center"
+													>
+														<div class="distance">20<span>الف ك.م</span></div>
+														<div class="lines">
+															<img src="./../assets/images/lines.svg" alt="" />
+														</div>
+														<div class="date">2022</div>
+													</div>
+													<p class="car-name mb-0">Hyundai Elantra</p>
+													<small class="">معرض الملكي للسيارات</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="box pb-2">
+										<!-- car image -->
+										<a href="">
+											<div class="image-box px-3 py-3 mb-2">
+												<img
+													src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+													alt=""
+													class="w-100"
+												/></div
+										></a>
+										<!-- car description -->
+										<div class="car-desc px-3">
+											<div
+												class="d-flex justify-content-between align-items-end"
+											>
+												<div class="right">
+													<div></div>
+													<div class="price">20.000$</div>
+													<div class="add-to-favorite">
+														<span class="heart-icon">
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="#000"
+																class="bi bi-heart un-fill active"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																/>
+															</svg>
+															<svg
+																style="color: red"
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="currentColor"
+																class="bi bi-heart-fill filled"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	fill-rule="evenodd"
+																	d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+																	fill="red"
+																></path>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<div class="left">
+													<div
+														class="d-flex justify-content-between align-items-center"
+													>
+														<div class="distance">20<span>الف ك.م</span></div>
+														<div class="lines">
+															<img src="./../assets/images/lines.svg" alt="" />
+														</div>
+														<div class="date">2022</div>
+													</div>
+													<p class="car-name mb-0">Hyundai Elantra</p>
+													<small class="">معرض الملكي للسيارات</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="box pb-2">
+										<!-- car image -->
+										<a href="">
+											<div class="image-box px-3 py-3 mb-2">
+												<img
+													src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+													alt=""
+													class="w-100"
+												/></div
+										></a>
+										<!-- car description -->
+										<div class="car-desc px-3">
+											<div
+												class="d-flex justify-content-between align-items-end"
+											>
+												<div class="right">
+													<div></div>
+													<div class="price">20.000$</div>
+													<div class="add-to-favorite">
+														<span class="heart-icon">
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="#000"
+																class="bi bi-heart un-fill active"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																/>
+															</svg>
+															<svg
+																style="color: red"
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="currentColor"
+																class="bi bi-heart-fill filled"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	fill-rule="evenodd"
+																	d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+																	fill="red"
+																></path>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<div class="left">
+													<div
+														class="d-flex justify-content-between align-items-center"
+													>
+														<div class="distance">20<span>الف ك.م</span></div>
+														<div class="lines">
+															<img src="./../assets/images/lines.svg" alt="" />
+														</div>
+														<div class="date">2022</div>
+													</div>
+													<p class="car-name mb-0">Hyundai Elantra</p>
+													<small class="">معرض الملكي للسيارات</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="box pb-2">
+										<!-- car image -->
+										<a href="">
+											<div class="image-box px-3 py-3 mb-2">
+												<img
+													src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+													alt=""
+													class="w-100"
+												/></div
+										></a>
+										<!-- car description -->
+										<div class="car-desc px-3">
+											<div
+												class="d-flex justify-content-between align-items-end"
+											>
+												<div class="right">
+													<div></div>
+													<div class="price">20.000$</div>
+													<div class="add-to-favorite">
+														<span class="heart-icon">
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="#000"
+																class="bi bi-heart un-fill active"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																/>
+															</svg>
+															<svg
+																style="color: red"
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="currentColor"
+																class="bi bi-heart-fill filled"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	fill-rule="evenodd"
+																	d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+																	fill="red"
+																></path>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<div class="left">
+													<div
+														class="d-flex justify-content-between align-items-center"
+													>
+														<div class="distance">20<span>الف ك.م</span></div>
+														<div class="lines">
+															<img src="./../assets/images/lines.svg" alt="" />
+														</div>
+														<div class="date">2022</div>
+													</div>
+													<p class="car-name mb-0">Hyundai Elantra</p>
+													<small class="">معرض الملكي للسيارات</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="box pb-2">
+										<!-- car image -->
+										<a href="">
+											<div class="image-box px-3 py-3 mb-2">
+												<img
+													src="./../assets/images/2022-Hyundai-Sonata-silver-full_color-driver_side_front_quarter.png"
+													alt=""
+													class="w-100"
+												/></div
+										></a>
+										<!-- car description -->
+										<div class="car-desc px-3">
+											<div
+												class="d-flex justify-content-between align-items-end"
+											>
+												<div class="right">
+													<div></div>
+													<div class="price">20.000$</div>
+													<div class="add-to-favorite">
+														<span class="heart-icon">
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="#000"
+																class="bi bi-heart un-fill active"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																/>
+															</svg>
+															<svg
+																style="color: red"
+																xmlns="http://www.w3.org/2000/svg"
+																width="19"
+																height="19"
+																fill="currentColor"
+																class="bi bi-heart-fill filled"
+																viewBox="0 0 19 19"
+															>
+																<path
+																	fill-rule="evenodd"
+																	d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+																	fill="red"
+																></path>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<div class="left">
+													<div
+														class="d-flex justify-content-between align-items-center"
+													>
+														<div class="distance">20<span>الف ك.م</span></div>
+														<div class="lines">
+															<img src="./../assets/images/lines.svg" alt="" />
+														</div>
+														<div class="date">2022</div>
+													</div>
+													<p class="car-name mb-0">Hyundai Elantra</p>
+													<small class="">معرض الملكي للسيارات</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pagination">
+								<div
+									class="wrapper bg-white rounded-pill d-flex align-items-center gap-2 mx-auto"
+								>
+									<span class="next-btn arrow-btn active"
+										><img
+											class="mx-auto d-block"
+											src="./../assets/images/next-arrow.svg"
+											alt=""
+									/></span>
+									<ul class="list-unstyled d-flex mb-0 align-items-center">
+										<li>4</li>
+										<li>3</li>
+										<li>2</li>
+										<li class="active">1</li>
+									</ul>
+									<span class="prev-btn arrow-btn disabled"
+										><img
+											class="mx-auto d-block"
+											src="./../assets/images/prev-arrow.svg"
+											alt=""
+									/></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer class="px-3 pb-4">
+			<div class="container-fluid">
+				<div class="logo">
+					<img src="./../assets/images/carlogo.svg" alt="" />
+				</div>
+				<p>
+					اجعل تجربة شراء سيارتك عادلة وسريعة وسهلة مع مركبتي - سوق مجاني
+					للسيارات على الإنترنت
+				</p>
+				<p>يربط مركبتي المشترين والبائعين مجانًا</p>
+				<p class="phone-number">
+					<span>0097590000000</span>
+					<span class="icon"
+						><img src="./../assets/images/phone-icon.svg" alt=""
+					/></span>
+				</p>
+				<p>
+					<a href="">الشروط والأحكام</a> | <a href="">سياسة خاصة </a>|
+					<a href=""> الأسئلة الشائعة </a> |<a href=""> معلومات عن الشركة</a>
+				</p>
+				<p>©مركبتي - 2022 كل الحقوق محفوظة</p>
+				<p class="icon">
+					<a href=""
+						><img src="./../assets/images/instgram-icon.svg" alt=""
+					/></a>
+				</p>
+			</div>
+		</footer>
+		<script src="./../assets/js/bootstrap.min.js"></script>
+		<script src="./../assets/js/jquery-3.5.1.min.js"></script>
+		<script src="./../assets/js/select2.min.js"></script>
+		<script>
+			$(".field-select").select2({
+				theme: "bootstrap-5",
+				width: $(this).data("width")
+					? $(this).data("width")
+					: $(this).hasClass("w-100")
+					? "100%"
+					: "style",
+				placeholder: $(this).data("placeholder"),
+			});
+			document.querySelectorAll(".heart-icon").forEach((el) => {
+				el.onclick = function () {
+					console.log(this);
+					$(this).children("svg").toggleClass("active");
+				};
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./../assets/css/style.css" />
+
+		<title>مركبتي</title>
+		<style>
+			input[type="text"] {
+				padding-top: 0.75rem;
+				padding-bottom: 0.75rem;
+			}
+
+			.box {
+				background-color: #e9e5e5;
+				border-radius: 25px;
+				cursor: pointer;
+				width: 250px;
+			}
+			.box p {
+				font-size: 12px;
+			}
+
+			.box img {
+				width: 40px !important;
+			}
+			label {
+				cursor: pointer;
+			}
+			button {
+				background-color: rgb(3, 202, 3);
+			}
+			@media (max-width: 576px) {
+				.box {
+					margin: auto;
+				}
+				.edit {
+					justify-content: center !important;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container-fluid">
+				<!-- User -->
+				<div class="right">
+					<a href="./store.html" class="text-decoration-none">
+						<img
+							src="./../assets/images/user.svg"
+							alt="مستخدم"
+							class="d-inline-block ms-2"
+						/>
+						<span class="">متجرنا</span>
+					</a>
+				</div>
+				<!-- Logo -->
+				<div class="logo">
+					<a href="./home.html"
+						><img src="./../assets/images/مركبتي logo.png" alt="مركبتي"
+					/></a>
+				</div>
+				<!-- Log in Nav -->
+				<div>
+					<a href="./../index.html" class="text-decoration-none">
+						<span class="d-inline-block ms-2">تسجيل الدخول</span>
+					</a>
+					<a href="./signup.html" class="log-in text-decoration-none">
+						<button class="bg-transparent rounded-pill px-3">تسجيل</button>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<form action="" method="POST">
+			<div class="container-fluid" style="margin-top: 90px">
+				<div class="h1 mb-4">تعديل الملف الشخصي</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-4 mb-3">
+						<input
+							type="text"
+							name="edit-name"
+							class="form-control rounded-pill"
+							id="edit-name"
+							aria-describedby="edit-name"
+							placeholder="  تعديل الاسم"
+							required
+						/>
+					</div>
+					<!-- password -->
+					<div class="col-sm-6 col-md-4 mb-3">
+						<input
+							type="text"
+							name="edit-phone"
+							class="form-control rounded-pill"
+							id="edit-phone"
+							aria-describedby="edit-phone"
+							placeholder="تعديل رقم الهاتف"
+							required
+						/>
+					</div>
+					<!-- password -->
+					<div class="col-sm-6 col-md-4 mb-3">
+						<input
+							type="text"
+							name="new-address"
+							class="form-control rounded-pill"
+							id="new-address"
+							aria-describedby="new-address"
+							placeholder="العنوان الجديد"
+							required
+						/>
+					</div>
+				</div>
+				<div class="box py-4 px-3 mb-4 shadow-sm">
+					<label for="images" class="w-100 h-100">
+						<h6 class="text-center mb-3">اضافة صورة شخصية جديدة</h6>
+						<img
+							src="./../assets/images/plus-icon.svg"
+							alt=""
+							class="d-block mx-auto rounded-circle p-2"
+						/>
+					</label>
+					<input
+					asp-for="ImageFile"
+					type="file"
+					name="images"
+					id="images"
+					class="d-none"
+					accept="image/*" />
+				</div>
+				<div class="box py-4 px-3 mb-4 shadow-sm">
+					<label for="images" class="w-100 h-100">
+						<h6 class="text-center mb-3">اضافة صورة غلاف جديدة</h6>
+						<img
+							src="./../assets/images/plus-icon.svg"
+							alt=""
+							class="d-block mx-auto rounded-circle p-2"
+						/>
+					</label>
+					<input
+							asp-for="Images"
+							type="file"
+							name="images"
+							id="images"
+							class="d-none"
+							accept="image/*" />
+				</div>
+				<div class="edit d-flex justify-content-end">
+					<button
+						type="submit"
+						class="px-4 py-2 border-0 rounded-pill outline-none border-none text-dark fw-bold shadow-sm"
+					>
+						تعديل
+					</button>
+				</div>
+			</div>
+		</form>
+
+		<!-- footer -->
+
+		<footer class="px-3 pb-4">
+			<div class="container-fluid">
+				<div class="logo">
+					<img src="./../assets/images/carlogo.svg" alt="" />
+				</div>
+				<p>
+					اجعل تجربة شراء سيارتك عادلة وسريعة وسهلة مع مركبتي - سوق مجاني
+					للسيارات على الإنترنت
+				</p>
+				<p>يربط مركبتي المشترين والبائعين مجانًا</p>
+				<p class="phone-number">
+					<span>0097590000000</span>
+					<span class="icon"
+						><img src="./../assets/images/phone-icon.svg" alt=""
+					/></span>
+				</p>
+				<p>
+					<a href="">الشروط والأحكام</a> | <a href="">سياسة خاصة </a>|
+					<a href=""> الأسئلة الشائعة </a> |<a href=""> معلومات عن الشركة</a>
+				</p>
+				<p>©مركبتي - 2022 كل الحقوق محفوظة</p>
+				<p class="icon">
+					<a href=""
+						><img src="./../assets/images/instgram-icon.svg" alt=""
+					/></a>
+				</p>
+			</div>
+		</footer>
+		<script src="./../assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
