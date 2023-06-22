@@ -240,16 +240,46 @@ header .carousel-indicators button {
 	display: inline;
 }
 /**********************************************************************/
-.best-car{}
+.best-car{
+	margin: 50px 0;
+}
 
 .best-car .carousel{}
 
-.best-car .carousel .best-carousel{}
+.best-car .carousel .best-carousel{
+	margin-bottom: 50px;
+}
 
 .best-car .carousel .best-carousel .item{}
 
-.best-car .carousel .best-carousel .item img{}
+.best-car .carousel .best-carousel .item img{
+	border-radius: 15px;
+}
+.best-car .owl-theme .owl-nav{
 
+}
+.best-car  .owl-carousel .owl-nav button {
+    width: 60px;
+    height: 60px;
+    background: #f9f9f9 !important;
+    border-radius: 50%;
+    transition: var(--main-transition);}
+
+.best-car .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 31%;
+    right: -80px;
+}
+.best-car .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 31%;
+    left: -80px;
+}
+.best-car .owl-carousel .owl-nav button i {
+    font-size: 25px;
+    color: var(--main-color );
+    line-height: 2;
+}
 
 
 

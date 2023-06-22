@@ -10,9 +10,9 @@
 		<link rel="stylesheet" href="./../assets/css/select2.min.css" />
 		<link rel="stylesheet" href="./../assets/css/select2-bootstrap-5-theme.rtl.min.css"/>
 		<!-- NQ -->
-		<link href="./../assets/css/line-awesome.min.css" rel="stylesheet" type="text/css" />
-		<link href="./../assets/css/fontawesome.min.css" rel="stylesheet" type="text/css" />
 		<link href="./../assets/css/all.min.css" rel="stylesheet" type="text/css" />
+		<link href="./../assets/css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="./../assets/css/line-awesome.min.css" rel="stylesheet" type="text/css" />
 		<link href="./../assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
 		<link href="./../assets/css/owl.theme.default.css" rel="stylesheet" type="text/css" />
 		<title>مركبتي</title>
@@ -120,6 +120,43 @@
 		<!-- filter and cars -->
 		<section>
 			<div class="container">
+				<!-- Start Approval -->
+				<div class="best-car">
+					<h2>السيارات الأفضل</h2>
+				  <!-- Start carousel -->
+					<div class="carousel">
+						<div class="owl-carousel best-carousel owl-theme">
+				  
+						  <div class="item">
+							  <img src="../assets/images/bestCar1.png"  alt="">
+							  <h4></h4>
+						  </div>
+						  <div class="item">
+							  <img src="../assets/images/bestCar2.jpg" alt="">
+						  </div>
+						  <div class="item">
+							  <img src="../assets/images/bestCar3.jpg"  alt="">
+						  </div>
+						  <div class="item">
+							<img src="../assets/images/bestCar1.png"  alt="">
+							<h4></h4>
+						</div>
+						<div class="item">
+							<img src="../assets/images/bestCar2.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="../assets/images/bestCar3.jpg"  alt="">
+						</div>
+						  <!-- <div class="item"><h4>1</h4></div>
+						  <div class="item"><h4>2</h4></div>
+						  <div class="item"><h4>3</h4></div>
+						  <div class="item"><h4>4</h4></div> -->
+
+					  </div>
+					</div>
+				  <!-- End carousel -->
+				</div>
+				  <!-- End Approval -->
 				<div class="row">
 					<!-- filter sidebar  -->
 					<div class="col-md-3 col-sm-12">
@@ -640,46 +677,17 @@
 					</div>
 					<!-- cars -->
 					<div class="col-md-9 col-sm-12">
-						 <!-- Start Approval -->
-						 <div class="best-car">
-							<div class="container">
-							  <h2>سيارات</h2>
-							<!-- Start carousel -->
-							  <div class="carousel">
-								  <div class="owl-carousel best-carousel owl-theme">
-						  
-									<div class="item box">
-									  <img src="../assets/images/bestCar1.png"  alt="">
-									</div>
-						  
-									<div class="item box">
-										<img src="../assets/images/bestCar2.png"  alt="">
-									</div>
-						  
-									<div class="item box">
-										<img src="../assets/images/bestCar3.png"  alt="">
-									</div>
-						  
-									<div class="item box">
-										<img src="../assets/images/bestCar4.png"  alt="">
-									</div>
-
-								</div>
-							  </div>
-							<!-- End carousel -->
-							</div>
-						  </div>
-							<!-- End Approval -->
+						 
 
 						<!-- filter buttons -->
-						<div class="filters mb-3">
+						<!-- <div class="filters mb-3">
 							<ul class="d-flex gap-3 list-unstyled">
 								<li><button class="">سيارات</button></li>
 								<li><button class="">دراجات نارية</button></li>
 								<li><button class="">سيارات مستخدمة</button></li>
 								<li><button class="">أخرى</button></li>
 							</ul>
-						</div>
+						</div> -->
 						<!-- cars section -->
 
 						<div class="cars">
@@ -1381,26 +1389,47 @@
 			});
 		</script>
 		<script>
-		$(document).ready(function(){
+	// 	$(document).ready(function(){
+	// 		$('.best-carousel').owlCarousel({
+	// 		rtl:true,
+	// 		loop:true,
+	// 		margin:0,
+	// 		dots:false,
+	// 		navText:["<i class='las la-arrow-right'></i>","<i class='las la-arrow-left'></i>"],
+	// 		nav:true,
+	// 		responsive:{
+	// 			0:{
+	// 				items:3
+	// 			},
+	// 			600:{
+	// 				items:3
+	// 			},
+	// 			1000:{
+	// 				items:4
+	// 			}
+	// 		}
+	// 	})
+    //   });
+	  $(document).ready(function(){
 			$('.best-carousel').owlCarousel({
-			rtl:true,
-			loop:true,
-			margin:0,
-			dots:false,
-			navText:["<i class='las la-arrow-right'></i>","<i class='las la-arrow-left'></i>"],
-			nav:true,
-			responsive:{
-				0:{
-					items:3
-				},
-				600:{
-					items:3
-				},
-				1000:{
-					items:4
-				}
-			}
-		})
+					rtl:true,
+					loop:true,
+					margin:20,
+					nav:true,
+					navText:["<i class='las la-arrow-right'></i>","<i class='las la-arrow-left'></i>"],
+					dots:true,
+					responsive:{
+						0:{
+							items:1
+						},
+						600:{
+							items:3
+						},
+						1000:{
+							items:3
+						}
+					}
+			})
       });
 		</script>
 	</body>
