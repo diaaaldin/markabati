@@ -8,11 +8,13 @@
 		<link rel="stylesheet" href="./../assets/css/style.css" />
 		<link rel="stylesheet" href="./../assets/css/home.css" />
 		<link rel="stylesheet" href="./../assets/css/select2.min.css" />
-		<link
-			rel="stylesheet"
-			href="./../assets/css/select2-bootstrap-5-theme.rtl.min.css"
-		/>
-
+		<link rel="stylesheet" href="./../assets/css/select2-bootstrap-5-theme.rtl.min.css"/>
+		<!-- NQ -->
+		<link href="./../assets/css/line-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="./../assets/css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="./../assets/css/all.min.css" rel="stylesheet" type="text/css" />
+		<link href="./../assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+		<link href="./../assets/css/owl.theme.default.css" rel="stylesheet" type="text/css" />
 		<title>مركبتي</title>
 	</head>
 	<body>
@@ -638,6 +640,37 @@
 					</div>
 					<!-- cars -->
 					<div class="col-md-9 col-sm-12">
+						 <!-- Start Approval -->
+						 <div class="best-car">
+							<div class="container">
+							  <h2>سيارات</h2>
+							<!-- Start carousel -->
+							  <div class="carousel">
+								  <div class="owl-carousel best-carousel owl-theme">
+						  
+									<div class="item box">
+									  <img src="../assets/images/bestCar1.png"  alt="">
+									</div>
+						  
+									<div class="item box">
+										<img src="../assets/images/bestCar2.png"  alt="">
+									</div>
+						  
+									<div class="item box">
+										<img src="../assets/images/bestCar3.png"  alt="">
+									</div>
+						  
+									<div class="item box">
+										<img src="../assets/images/bestCar4.png"  alt="">
+									</div>
+
+								</div>
+							  </div>
+							<!-- End carousel -->
+							</div>
+						  </div>
+							<!-- End Approval -->
+
 						<!-- filter buttons -->
 						<div class="filters mb-3">
 							<ul class="d-flex gap-3 list-unstyled">
@@ -648,6 +681,7 @@
 							</ul>
 						</div>
 						<!-- cars section -->
+
 						<div class="cars">
 							<div class="row mb-5">
 								<div class="col-sm-6 col-md-4 mb-4">
@@ -1322,9 +1356,13 @@
 				</p>
 			</div>
 		</footer>
-		<script src="./../assets/js/bootstrap.min.js"></script>
 		<script src="./../assets/js/jquery-3.5.1.min.js"></script>
+		<script src="./../assets/js/bootstrap.min.js"></script>
 		<script src="./../assets/js/select2.min.js"></script>
+		<script src="./../assets/js/all.min.js"></script>
+   	    <script src="./../assets/js/fontawesome.min.js"></script>
+		<script src="./../assets/js/owl.carousel.min.js"></script>
+
 		<script>
 			$(".field-select").select2({
 				theme: "bootstrap-5",
@@ -1341,6 +1379,29 @@
 					$(this).children("svg").toggleClass("active");
 				};
 			});
+		</script>
+		<script>
+		$(document).ready(function(){
+			$('.best-carousel').owlCarousel({
+			rtl:true,
+			loop:true,
+			margin:0,
+			dots:false,
+			navText:["<i class='las la-arrow-right'></i>","<i class='las la-arrow-left'></i>"],
+			nav:true,
+			responsive:{
+				0:{
+					items:3
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:4
+				}
+			}
+		})
+      });
 		</script>
 	</body>
 </html>

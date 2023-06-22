@@ -239,6 +239,28 @@ header .carousel-indicators button {
 .heart-icon svg.active {
 	display: inline;
 }
+/**********************************************************************/
+.best-car{}
+
+.best-car .carousel{}
+
+.best-car .carousel .best-carousel{}
+
+.best-car .carousel .best-carousel .item{}
+
+.best-car .carousel .best-carousel .item img{}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* @media (max-width: 576px) {
 	.home-header .carousel-item img {
