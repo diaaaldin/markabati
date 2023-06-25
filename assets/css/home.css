@@ -1,3 +1,12 @@
+:root {
+	--main-color: #00f900;
+	--main-color-alt: #2acc2a;
+	--main-transition: 0.3s;
+	--main-padding-top: 100px;
+	--main-padding-bottom: 100px;
+	--section-background: #ececec;
+  }
+  /******************************************************************************/
 header {
 	margin-top: 100px;
 	/* border: 10px solid black; */
@@ -259,26 +268,35 @@ header .carousel-indicators button {
 
 }
 .best-car  .owl-carousel .owl-nav button {
-    width: 60px;
-    height: 60px;
-    background: #f9f9f9 !important;
+    width: 50px;
+    height: 50px;
+    background: #dddddd !important;
     border-radius: 50%;
     transition: var(--main-transition);}
+.best-car  .owl-carousel .owl-nav button:hover {
+  
+    background: #858484 !important;
+    ;}
 
 .best-car .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
-    top: 31%;
+    top: 30%;
     right: -80px;
 }
 .best-car .owl-carousel .owl-nav button.owl-next {
     position: absolute;
-    top: 31%;
+    top: 30%;
     left: -80px;
+	
 }
-.best-car .owl-carousel .owl-nav button i {
-    font-size: 25px;
-    color: var(--main-color );
+.best-car .owl-carousel .owl-nav button svg {
+    font-size: 16px;
     line-height: 2;
+
+}
+.best-car .owl-carousel .owl-nav button:hover svg {
+	color: var(--main-color );
+
 }
 
 

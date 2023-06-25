@@ -39,6 +39,19 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
+
+:root {
+	--main-color: #00f900;
+	--main-color-alt: #2acc2a;
+	--main-transition: 0.3s;
+	--main-padding-top: 100px;
+	--main-padding-bottom: 100px;
+	--section-background: #ececec;
+  }
+
+
 body {
 	background-color: #f2f2f2;
 }
@@ -114,8 +127,13 @@ input[type=submit]:hover {
 .home-header .wrapper .carousel-inner .carousel-item img{
 	width: 100%;
 }
+.sidebar button.submit:hover{
+	background-color: var(--main-color-alt);
+}
+.pagination li:hover{
+	color: var(--main-color-alt);
 
-
+}
 
 
 
