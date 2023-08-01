@@ -13,10 +13,14 @@ button.pay {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	/* padding: 50px 100px; */
 }
-
+.banner .box .carousel-inner .carousel-item{
+    height: 300px !important;
+}
 .banner .box .carousel-inner img {
 	width: 70% !important;
 	margin: auto;
+	max-height: 100%;
+    object-fit: contain;
 }
 
 .carousel-control-next span,
@@ -59,6 +63,9 @@ header .description {
 	background-color: white;
 	color: #6b6b6b;
 	border-radius: 20px;
+}
+header .description ul{
+	margin-right: 17px;
 }
 
 .align-right {
