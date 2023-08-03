@@ -1,5 +1,5 @@
 header {
-	margin-top: 65px;
+	margin-top: 93px;
 }
 header .cover-image-wrapper,
 header .profile-image-wrapper {
@@ -90,6 +90,7 @@ header .profile .edit-profile-btn {
 	border-radius: 20px;
 	box-shadow: -2px 2px 13px rgba(0, 0, 0, 0.1);
 	background-color: #eeeeee;
+	margin-bottom: 30px;
 }
 .cars .image-box {
 	background-color: #d4d4d4;
@@ -113,6 +114,24 @@ header .profile .edit-profile-btn {
 .right .add-to-favorite img {
 	width: 14px;
 	cursor: pointer;
+}
+.add-to-favorite .heart-icon{
+	cursor: pointer;
+}
+.add-to-favorite .heart-icon i{
+	color: gray;
+}
+.add-to-favorite .heart-icon i.fill{
+color: red;
+}
+.desc .description{
+    background-color: white;
+    color: #6b6b6b;
+    border-radius: 20px;
+	padding: 20px;
+}
+.desc .description h6{
+	font-weight: 400;
 }
 
 @media (max-width: 767px) {
