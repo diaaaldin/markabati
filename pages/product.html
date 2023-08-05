@@ -8,6 +8,11 @@
 		<link rel="stylesheet" href="./../assets/css/style.css" />
 		<link rel="stylesheet" href="./../assets/css/home.css" />
 		<link rel="stylesheet" href="./../assets/css/product.css" />
+			<!-- NQ -->
+			<link href="../assets/css/all.min.css" rel="stylesheet" type="text/css" />
+			<link href="../assets/css/line-awesome.css" rel="stylesheet" type="text/css" />
+			<link href="../assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+			<link href="../assets/css/owl.theme.default.css" rel="stylesheet" type="text/css" />
 		<title>مركبتي</title>
 	</head>
 	<body>
@@ -76,8 +81,13 @@
 									class="rounded-circle pay border-0"
 									style="width: 35px; height: 35px"
 								>
-									<img src="./../assets/images/heart.svg" alt="" />
+								<div class="add-to-favorite" >
+									<span class="heart-icon">
+										<i class="fa-solid fa-heart" id="favourite_icon"></i>
+								</span>
+								</div>
 								</button>
+								
 							</div>
 							<div
 								class="d-flex align-items-center gap-2"
@@ -772,6 +782,12 @@
 				};
 			});
 	
+			(function() {
+				const heart = document.getElementById('favourite_icon');
+				heart.addEventListener('click', function() {
+					heart.classList.toggle('fill');
+				});
+				})();
 		</script>
 	</body>
 </html>

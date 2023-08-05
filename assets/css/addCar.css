@@ -60,11 +60,12 @@
 	line-height: 2.2;
 }
 .sidebar input.range {
-	width: 90px;
+	
 	background: #e0e0e0;
 	text-align: center;
 	color: #5b5b5b;
 	border: 1px solid #b7b7b7;
+	margin: 0 auto;
 }
 
 .sidebar .circle {

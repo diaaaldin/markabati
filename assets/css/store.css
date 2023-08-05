@@ -115,15 +115,7 @@ header .profile .edit-profile-btn {
 	width: 14px;
 	cursor: pointer;
 }
-.add-to-favorite .heart-icon{
-	cursor: pointer;
-}
-.add-to-favorite .heart-icon i{
-	color: gray;
-}
-.add-to-favorite .heart-icon i.fill{
-color: red;
-}
+
 .desc .description{
     background-color: white;
     color: #6b6b6b;

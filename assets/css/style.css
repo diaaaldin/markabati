@@ -147,7 +147,44 @@ input[type=submit]:hover {
 	height: 100%;
 	width: 100%;
 }
+
+.add-to-favorite .heart-icon{
+	cursor: pointer;
+}
+.add-to-favorite .heart-icon i{
+	color: gray;
+}
+.add-to-favorite .heart-icon i.fill{
+color: red;
+}
+.rounded-circle .add-to-favorite .heart-icon i {
+	font-size: 20px;
+    margin-top: 6px;
+	}
 /************************************   End product    ********************************/
+
+/************************************    Profile   ********************************/
+.profile .form input{
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+.profile .form .form-select{
+	border-radius: 50rem!important;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+.profile .form textarea{
+	border-radius: 1rem!important;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+.profile .edit button{
+	width: 150px;
+	margin-top: 30px;
+}
+/************************************  End Profile   ********************************/
+
+
 
 /* footer */
 footer {
