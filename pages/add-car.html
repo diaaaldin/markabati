@@ -12,16 +12,24 @@
 			rel="stylesheet"
 			href="./../assets/css/select2-bootstrap-5-theme.rtl.min.css"
 		/>
-
+	<!-- NQ -->
+			<link href="../assets/css/all.min.css" rel="stylesheet" type="text/css" />
+			<link href="../assets/css/line-awesome.css" rel="stylesheet" type="text/css" />
+			<link href="../assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+			<link href="../assets/css/owl.theme.default.css" rel="stylesheet" type="text/css" />
 		<title>مركبتي</title>
 		<style>
 			textarea::-webkit-input-placeholder {
 				font-size: 20px;
 				font-weight: bold;
 			}
+
+
+
 		</style>
 	</head>
 	<body>
+		<div class="add_car">
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container">
@@ -543,10 +551,27 @@
 									</li>
 								</ul>
 								<div class="box py-2 px-3 mb-3 rounded-3">
-									<p>اسم الاضافة</p>
-									<input type="text">
-									<p>القيمة</p>
-									<input type="text">
+
+									<div id="additionGroup" class="form-group">
+										<div id="addition" class="row">
+											<label for="email"> اضافات جديدة </label>
+											<div class="col" >
+												<!-- <label for="email">اسم الاضافة </label> -->
+												<input asp-for="addition" type="text" placeholder="اسم الاضافة" class="form-control m-1 addition" />											   
+											</div>
+											<div class="col" >
+												<!-- <label for="email"> القيمة </label> -->
+												<input asp-for="value" type="text" placeholder="القيمة" class="form-control m-1 value" />											   
+											</div>
+											<div class="col-auto p-0 remove">
+												<button disabled id="removeaddition" type="button" class="form-control m-1 text-danger" onclick="removeadditionFunc(0)"><i class="fa-solid fa-trash"></i></button>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group mx-1 text-center add_addition">
+										<button id="add" type="button" class="btn btn-primary" onclick="addadditionFunc()">اضافة <i class="fa-solid fa-plus"></i></button>
+									</div>
 								</div>
 								<div class="box py-2 px-3 mb-3 rounded-3">
 									<label for="images" class="w-100 h-100">
@@ -601,7 +626,7 @@
 				</div>
 			</div>
 		</form>
-
+	</div>
 		<!-- footer -->
 
 		<footer class="px-3 pb-4">
@@ -645,6 +670,29 @@
 					: "style",
 				placeholder: $(this).data("placeholder"),
 			});
+		</script>
+		<script>
+			let x = 1;
+			function addadditionFunc() {
+				console.log(x);
+				$('#additionGroup').append(`
+							<div id="addition${x}" class="row">
+								<div class="col">
+									<input name="addition" type="text" placeholder="اسم الاضافة" class="form-control m-1 addition" />
+								</div>
+								<div class="col" >
+									<input asp-for="value" type="text" placeholder="القيمة" class="form-control m-1 value" />											   
+								</div>
+								<div class="col-auto p-0 remove">
+									<button id="removeaddition" type="button" class="form-control m-1 text-danger" onclick="removeadditionFunc(${x})"><i class="fa-solid fa-trash"></i></button>
+								</div>
+							</div>`);
+				x++;
+			}
+			function removeadditionFunc(index) {
+				console.log(index);
+				$(`#addition${index}`).remove();
+			}
 		</script>
 	</body>
 </html>
