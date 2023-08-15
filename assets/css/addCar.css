@@ -1,8 +1,9 @@
 /* sidebar */
 .sidebar {
-	/* background-color: #eeeeee; */
+	background-color: #e1e1e1;
 	border-radius: 20px;
-	/* box-shadow: 0 0 8px rgba(0, 0, 0, 0.15); */
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+	margin-bottom: 30px;
 }
 
 .sidebar .head {
@@ -96,3 +97,98 @@
 .sidebar button.submit {
 	background-color: #00f900;
 }
+
+
+
+/************************************    add_car   ********************************/
+.add_car .box-image{
+    background-color: #e1e1e1;
+	border-radius: 20px;
+	padding: 20px 0;
+	margin-top: 30px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+.add_car .box-image .row .a1{
+	border-left: 1px solid #ada7a7;
+}
+.add_car .box-image p{
+	font-size: 12px;
+}
+.add_car .box-image .box label{
+	cursor: pointer;
+}
+
+
+
+.add_car .box-addition{
+    background-color: #e1e1e1;
+	border-radius: 20px;
+	padding: 20px 0;
+	margin-top: 20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.add_car #additionGroup .col{
+	padding-right: 0;
+    padding-left: 10px;
+}
+.add_car #additionGroup .title{
+	font-weight: 500;
+	/* margin-top: 30px; */
+	padding: 5px;
+	font-size: 18px;
+}
+.add_car #additionGroup .remove{
+	margin-left: 2px;
+}
+.add_car #additionGroup .remove button{
+	width: 40px;
+}
+.add_car #additionGroup .remove button:hover{
+	background-color: #cfcfcf;
+}
+
+/* .add_car #additionGroup .addition{
+width: 164px;
+}
+.add_car #additionGroup .value{
+width: 68px;
+} */
+.add_car .add_addition button{
+margin-top: 10px;
+box-shadow: none;
+background-color: black;
+border: none;
+margin-right: -7px;
+}
+.add_car .add_addition button:hover{
+	background-color: #0aa10a;
+}
+.add_car .add_addition button:active:focus{
+box-shadow: none;
+}
+
+.add_car .publish button{
+	background-color: #00f900;
+	width: 50%;
+	margin-top: 50px;
+}
+.add_car .publish button:hover{
+	background-color: #2acc2a;;
+}
+
+/************************************  End add_car   ********************************/
+
+@media (max-width: 767.98px) {
+	.add_car .box-image .row{
+		margin: 0;
+	}
+	.add_car .box-image .row .a1{
+		border-left: none;
+		border-bottom: 1px solid #ada7a7;
+	}
+	.add_car .publish button{
+		background-color: #00f900;
+		width: 100%;}	
+	}
+	

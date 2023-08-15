@@ -65,7 +65,7 @@
 			<div class="container" style="margin-top: 90px">
 				<div class="h1">اضافة مركبة جديدة</div>
 				<div class="row">
-					<div class="col-3">
+					<div class="col-md-3 col-sm-12">
 						<div class="sidebar pb-3">
 							<!-- <div
 								class="head px-2 py-1 d-flex align-items-center justify-content-between"
@@ -550,60 +550,11 @@
 										</div>
 									</li>
 								</ul>
-								<div class="box py-2 px-3 mb-3 rounded-3">
-
-									<div id="additionGroup" class="form-group">
-										<div id="addition" class="row">
-											<label for="email"> اضافات جديدة </label>
-											<div class="col" >
-												<!-- <label for="email">اسم الاضافة </label> -->
-												<input asp-for="addition" type="text" placeholder="اسم الاضافة" class="form-control m-1 addition" />											   
-											</div>
-											<div class="col" >
-												<!-- <label for="email"> القيمة </label> -->
-												<input asp-for="value" type="text" placeholder="القيمة" class="form-control m-1 value" />											   
-											</div>
-											<div class="col-auto p-0 remove">
-												<button disabled id="removeaddition" type="button" class="form-control m-1 text-danger" onclick="removeadditionFunc(0)"><i class="fa-solid fa-trash"></i></button>
-											</div>
-										</div>
-									</div>
-
-									<div class="form-group mx-1 text-center add_addition">
-										<button id="add" type="button" class="btn btn-primary" onclick="addadditionFunc()">اضافة <i class="fa-solid fa-plus"></i></button>
-									</div>
-								</div>
-								<div class="box py-2 px-3 mb-3 rounded-3">
-									<label for="images" class="w-100 h-100">
-										<div class="icon"></div>
-										<h5 class="text-center">اضافة صورة</h5>
-										<img
-											src="./../assets/images/plus-icon.svg"
-											alt=""
-											class="d-block mx-auto rounded-circle p-2"
-										/>
-										<p class="mb-0 text-center">ضع 6 صور متنوعة عالى الاقل</p>
-									</label>
-									<input
-										type="file"
-										name="images"
-										id="images"
-										multiple
-										minlength="6"
-										class="d-none"
-										accept="image/*"
-									/>
-								</div>
-								<button
-									type="submit"
-									class="submit btn w-100 d-block rounded-pill shadow-lg fw-bold fs-4 mx-auto"
-								>
-									نشر
-								</button>
+								
 							</form>
 						</div>
 					</div>
-					<div class="col-7">
+					<div class="col-md-7 col-sm-12">
 						<div class="description">
 							<textarea
 								name="description"
@@ -622,7 +573,86 @@
 ماذا تريد أن تصف؟"
 							></textarea>
 						</div>
+						<div class="box-addition  px-3 mb-3 ">
+							<div id="additionGroup" class="form-group">
+								<div id="addition" class="row">
+									<label for="title" class="title"> اضافات جديدة </label>
+									<div class="col" >
+										<!-- <label for="email">اسم الاضافة </label> -->
+										<input asp-for="addition" type="text" placeholder="اسم الاضافة" class="form-control m-1 addition" />											   
+									</div>
+									<div class="col" >
+										<!-- <label for="email"> القيمة </label> -->
+										<input asp-for="value" type="text" placeholder="القيمة" class="form-control m-1 value" />											   
+									</div>
+									<div class="col-auto p-0 remove">
+										<button disabled id="removeaddition" type="button" class="form-control m-1 text-danger" onclick="removeadditionFunc(0)"><i class="fa-solid fa-trash"></i></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group add_addition">
+								<button id="add" type="button" class="btn btn-primary" onclick="addadditionFunc()">اضافة <i class="fa-solid fa-plus"></i></button>
+							</div>
+						</div>
+						<div class="box-image">
+							<div class="row">
+								<div class="col-md-6 a1">
+									<div class="box py-2 px-3 mb-3 rounded-3">
+										<label for="images" class="w-100 h-100">
+											<div class="icon"></div>
+											<h5 class="text-center">اضافة صورة </h5>
+											<img
+												src="./../assets/images/plus-icon.svg"
+												alt=""
+												class="d-block mx-auto rounded-circle p-2"
+											/>
+											<p class="mb-0 text-center">ارفع صورة رئيسية واضحة للمركبة</p>
+										</label>
+										<input
+											type="file"
+											name="images"
+											id="images"
+											multiple
+											minlength="6"
+											class="d-none"
+											accept="image/*"
+										/>
+									</div>
+								</div>
+								<div class="col-md-6 a2">
+									<div class="box py-2 px-3 mb-3 rounded-3">
+										<label for="images" class="w-100 h-100">
+											<div class="icon"></div>
+											<h5 class="text-center">اضافة صور متعددة</h5>
+											<img
+												src="./../assets/images/plus-icon.svg"
+												alt=""
+												class="d-block mx-auto rounded-circle p-2"
+											/>
+											<p class="mb-0 text-center">ضع 6 صور متنوعة عالى الاقل</p>
+										</label>
+										<input
+											type="file"
+											name="images"
+											id="images"
+											multiple
+											minlength="6"
+											class="d-none"
+											accept="image/*"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="publish text-center">
+							<button ype="submit" class="submit btn  d-block rounded-pill shadow-lg fw-bold fs-4 mx-auto">نشر</button>
+	
+						</div>
 					</div>
+					
 				</div>
 			</div>
 		</form>

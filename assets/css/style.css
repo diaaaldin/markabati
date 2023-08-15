@@ -184,38 +184,6 @@ color: red;
 }
 /************************************  End Profile   ********************************/
 
-/************************************    add_car   ********************************/
-.add_car #additionGroup .col{
-	padding: 0;
-}
-.add_car #additionGroup .remove{
-	margin-left: 2px;
-}
-.add_car #additionGroup .remove button{
-	width: 40px;
-}
-.add_car #additionGroup .remove button:hover{
-	background-color: #cfcfcf;
-}
-.add_car #additionGroup .addition{
-width: 164px;
-}
-.add_car #additionGroup .value{
-width: 68px;
-}
-.add_car .add_addition button{
-margin-top: 10px;
-box-shadow: none;
-background-color: black;
-border: none;
-}
-.add_car .add_addition button:hover{
-	background-color: #0aa10a;
-}
-.add_car .add_addition button:active:focus{
-box-shadow: none;
-}
-/************************************  End add_car   ********************************/
 
 
 
