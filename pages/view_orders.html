@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./../assets/css/style.css" />
+		<link rel="stylesheet" href="./../assets/css/management.css" />
+
+		<title>مركبتي</title>
+		<style>
+	
+		</style>
+	</head>
+	<body>
+		
+		<div class="management">
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<div class="container">
+					<!-- User -->
+					<div class="right">
+						<a href="./store.html" class="text-decoration-none">
+							<img
+								src="./../assets/images/user.svg"
+								alt="مستخدم"
+								class="d-inline-block ms-2"
+							/>
+							<span class="">متجرنا</span>
+						</a>
+					</div>
+					<!-- Logo -->
+					<div class="logo">
+						<a href="./home.html"
+							><img src="./../assets/images/مركبتي logo.png" alt="مركبتي"
+						/></a>
+					</div>
+					<!-- Log in Nav -->
+					<div>
+						<a href="./../index.html" class="text-decoration-none">
+							<span class="d-inline-block ms-2">تسجيل الدخول</span>
+						</a>
+						<a href="./signup.html" class="log-in text-decoration-none">
+							<button class="bg-transparent rounded-pill px-3">تسجيل</button>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="cars_management">
+					<div class="title text-center">
+						<p> عرض الطلبات</p>
+					</div>
+
+					<div class="buttons add-car d-flex flex-column gap-2">
+						<a href="./add-car.html" class="d-block">
+							<button class="btn add-car-btn rounded-pill d-flex align-items-center gap-2 py-1">
+								<span><img src="../assets/images/plus-icon.svg" alt="" /></span>
+								<span class="fw-bold">اضافة مركبة</span>
+							</button>
+						</a>
+					</div>
+		
+					<!-- Button trigger modal -->
+					
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">طلب اعلان سيارة</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+
+								<div class="modal-body">
+									
+									  <div class="mb-3">
+										<label for="exampleFormControlTextarea1" class="form-label">محتوى الرسالة </label>
+										<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="أدخل رسالتك..." rows="3"></textarea>
+									  </div>
+
+									  <div class="mb-3">
+										<label for="exampleFormControlTextarea1" class="form-label"> مدة الطلب باليوم </label>
+										<input class="form-control Duration" type="number" placeholder="أدخل مدة الطلب" aria-label="default input example" >
+									  </div>
+									  <div class="mb-3">
+										<label for="exampleFormControlTextarea1" class="form-label">   السيارة المختارة </label>
+										<div class="image">
+											<img src="./../assets/images/bestCar2.jpg" class="img-responsive rounded" alt="Cinque Terre" width="100%">
+										</div>
+									  </div>
+								</div>
+
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button>
+									<button type="button" class="btn btn-primary">حفظ</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					<table class="table text-center view_order">
+						<thead class="thead-dark">
+						  <tr>
+							<th scope="col">#</th>
+							<th scope="col">النوع</th>
+							<th scope="col">الرسالة</th>
+							<th scope="col">رد الرسالة</th>
+							<th scope="col">صورة الطلب</th>
+							<th scope="col">مدة الطلب باليوم </th>
+							<th scope="col">حالة الطلب</th>
+							<th scope="col">حالة الدفع</th>
+							<th scope="col">خيارات</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row">1</th>
+							<td>نوع الطلب</td>
+							<td>رسالة الطلب</td>
+							<td>رد رسالة هذا النص هو مثال   </td>
+							<td>  <img src="./../assets/images/bestCar1.png" class="img-responsive rounded" alt="Cinque Terre" height="80"></td>
+							<td>5</td>
+							<td>جاهز</td>
+							<td>تم الدفع</td>
+							<td class="text-center">
+								<button type="button" class="btn btn-danger btn-delete">حذف</button>
+								<button type="button" class="btn btn-success btn-edit">تعديل</button>
+								<button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">اعلان</button>
+							</td>
+						  </tr>
+					
+						  <tr>
+							<th scope="row">2</th>
+							<td>نوع الطلب</td>
+							<td>رسالة الطلب</td>
+							<td>رد رسالة هذا النص هو مثال لنص يمكن أن يستبدل في نفس  </td>
+							<td>  <img src="./../assets/images/bestCar2.jpg" class="img-responsive rounded" alt="Cinque Terre" height="80"></td>
+							<td>5</td>
+							<td>جاهز</td>
+							<td>تم الدفع</td>
+							<td class="text-center">
+								<button type="button" class="btn btn-danger btn-delete">حذف</button>
+								<button type="button" class="btn btn-success btn-edit">تعديل</button>
+								<button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">اعلان</button>
+							</td>
+						  </tr>
+					
+						  <tr>
+							<th scope="row">3</th>
+							<td>نوع الطلب</td>
+							<td>رسالة الطلب</td>
+							<td>رد رسالة هذا النص هو مثال لنص يمكن أن يستبدل في نفس  </td>
+							<td>  <img src="./../assets/images/bestCar3.jpg" class="img-responsive rounded" alt="Cinque Terre" height="80"></td>
+							<td>5</td>
+							<td>جاهز</td>
+							<td>تم الدفع</td>
+							<td class="text-center">
+								<button type="button" class="btn btn-danger btn-delete">حذف</button>
+								<button type="button" class="btn btn-success btn-edit">تعديل</button>
+								<button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">اعلان</button>
+							</td>
+						  </tr>
+					
+						  <tr>
+							<th scope="row">4</th>
+							<td>نوع الطلب</td>
+							<td>رسالة الطلب</td>
+							<td>رد رسالة هذا النص هو مثال لنص يمكن أن يستبدل في نفس  </td>
+							<td>  <img src="./../assets/images/bestCar1.png" class="img-responsive rounded" alt="Cinque Terre" height="80"></td>
+							<td>5</td>
+							<td>جاهز</td>
+							<td>تم الدفع</td>
+							<td class="text-center">
+								<button type="button" class="btn btn-danger btn-delete">حذف</button>
+								<button type="button" class="btn btn-success btn-edit">تعديل</button>
+								<button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">اعلان</button>
+							</td>
+						  </tr>
+					
+						  <tr>
+							<th scope="row">5</th>
+							<td>نوع الطلب</td>
+							<td>رسالة الطلب</td>
+							<td>رد رسالة هذا النص هو مثال لنص يمكن أن يستبدل في نفس  </td>
+							<td>  <img src="./../assets/images/bestCar2.jpg" class="img-responsive rounded" alt="Cinque Terre" height="80"></td>
+							<td>5</td>
+							<td>جاهز</td>
+							<td>تم الدفع</td>
+							<td class="text-center">
+								<button type="button" class="btn btn-danger btn-delete">حذف</button>
+								<button type="button" class="btn btn-success btn-edit">تعديل</button>
+								<button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">اعلان</button>
+
+							</td>
+						  </tr>
+					
+						  <tr>
+							<th scope="row">6</th>
+							<td>نوع الطلب</td>
+							<td>رسالة الطلب</td>
+							<td>رد رسالة هذا النص هو مثال لنص يمكن أن يستبدل في نفس  </td>
+							<td>  <img src="./../assets/images/bestCar3.jpg" class="img-responsive rounded" alt="Cinque Terre" height="80"></td>
+							<td>5</td>
+							<td>جاهز</td>
+							<td>تم الدفع</td>
+							<td class="text-center">
+								<button type="button" class="btn btn-danger btn-delete">حذف</button>
+								<button type="button" class="btn btn-success btn-edit">تعديل</button>
+								<button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">اعلان</button>
+							</td>
+						  </tr>
+					
+						</tbody>
+					  </table>
+					
+				</div>
+			</div>
+		
+		
+		</div>
+		<!-- footer -->
+
+		<footer class="px-3 pb-4">
+			<div class="container">
+				<div class="logo">
+					<img src="./../assets/images/carlogo.svg" alt="" />
+				</div>
+				<p>
+					اجعل تجربة شراء سيارتك عادلة وسريعة وسهلة مع مركبتي - سوق مجاني
+					للسيارات على الإنترنت
+				</p>
+				<p>يربط مركبتي المشترين والبائعين مجانًا</p>
+				<p class="phone-number">
+					<span>0097590000000</span>
+					<span class="icon"
+						><img src="./../assets/images/phone-icon.svg" alt=""
+					/></span>
+				</p>
+				<p>
+					<a href="">الشروط والأحكام</a> | <a href="">سياسة خاصة </a>|
+					<a href=""> الأسئلة الشائعة </a> |<a href=""> معلومات عن الشركة</a>
+				</p>
+				<p>©مركبتي - 2022 كل الحقوق محفوظة</p>
+				<p class="icon">
+					<a href=""
+						><img src="./../assets/images/instgram-icon.svg" alt=""
+					/></a>
+				</p>
+			</div>
+		</footer>
+		<script src="./../assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
