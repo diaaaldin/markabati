@@ -38,6 +38,21 @@ margin-top:120px !important;
 
 }
 
+.scrollme {
+    max-width: 1300px;
+     overflow-x: auto;
+  }
+.scrollme table{
+    white-space: nowrap;
+  }
+  /* .scrollme {
+    overflow-x: auto;
+} */
+  /* .table-responsive {
+    max-width: 1200px;
+    overflow: auto;
+    display:inline-block;
+  } */
 .management .cars_management .table tr:first-child td:first-child { border-top-left-radius: 10px; }
 /**************************************/
 
